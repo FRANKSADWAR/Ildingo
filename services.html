@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="services.css">
+    <title>Services</title>
+</head>
+<body>
+              <!--HEADER AND NAVIGATION BAR-->
+              <nav class="navbar">
+                    <span class="open-slide">
+                       <a class ="congruent" href="#" onclick="openSlideMenu()">&Congruent;</a>
+                    </span>
+                      <h1 class="brand">Ildingo<i>Leads&TRADE;</i></h1>
+                </nav>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a id="current" href="services.html">Services</a>
+                    <a href="contacts.html">Contacts</a>
+                    <p>Ildingo <span>Leads</span>&COPY;2017</p>
+                </div>
+                <script> 
+                       function openSlideMenu(){
+                           document.getElementById('side-menu').style.width ='180px';
+                          // document.getElementById('main').style.marginLeft ='250px';        
+                       }
+                       function closeSlideMenu(){
+                           document.getElementById('side-menu').style.width ='0px';
+                           document.getElementById('main').style.marginLeft ='0px';        
+                       }
+               </script>
+        
+            <!--SERVICES SECTION-->
+       <section id="service">
+      <div class="container">
+        <article id="maincol">
+            <ul id="services">
+                <li>
+                    <h3>Geospatial analysis for business intelligence</h3>
+                    <p>
+                Is your traffic declining? Are you unable to achieve your business goals and 
+               meet the maximum profit at the end of the year because you are not generating enough sales?
+               Do you feel like your experiences with other agencies has resulted into them not understanding your state 
+               of business hence are not able to meet your needs?Or worse not able to respond to you? If any of that sounds
+               familiar, meet IldingoLeads.
+                     </p>
+                </li>
+                <li>
+                    <h3>Web mapping</h3>
+                <p>Our goal is to understand your 
+                business and what keeps you toiling 
+                day and night so that we are able to 
+                develop a 
+                customized strategy that meets your needs 
+                regardless of the size of the industry
+                and also 
+                to ensure optimized efficiency.
+                </li>
+                <li>
+                    <h3>Spatial statistics and analysis</h3>
+                     <p>Using open-source tools such as PySAL and the PyData stack,we take a 
+                         deep dive into your business environment ; your customers and the related econometrics.
+                        We are able to study their behaviour towards your products in relation to the business
+                         factors. </p>
+                </li>
+            </ul>   
+        </article>
+    </article>
+    <aside id="sidebar">
+        <div class="dark">
+        <h3>Get a quote</h3>
+        <form class="quote">
+            <div>
+                <label>Name</label><br>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <label>Email</label><br>
+                <input type="email" placeholder="Email Address" required="required">
+            </div>
+            <div>
+                <label>Message</label><br>
+                <textarea placeholder="Message" class="texts"></textarea>
+            </div>
+            <button type="submit" class="button1">Send</button>
+        </form>
+        </div>
+    </aside>
+      </div>
+       </section>
+
+
+            <!--FOOTER SECTION-->
+            <footer id="bottom">
+                <div class="gridded">
+                    <div class="box1">
+                        <a href="index.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="contacts.html">Contacts</a>
+                    </div>
+                </div>
+             <p class="lgbotom">Ildingo<span>Leads</span>&COPY;2017</p>
+             <p class="moto">" With you till the end of the line.."</p>
+        </footer>
+</body>
+</html>

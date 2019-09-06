@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template One</title>
+    <link rel="stylesheet" href="homeindex.css">
+</head>
+<body>
+    <!--HEADER AND NAVIGATION BAR-->
+  
+     <nav class="navbar">
+         <span class="open-slide">
+            <a class ="congruent" href="#" onclick="openSlideMenu()">&Congruent;</a>
+         </span>
+           <h1 class="brand">Ildingo<i>Leads&TRADE;</i></h1>
+     </nav>
+     <div id="side-menu" class="side-nav">
+         <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+         <a id="current"  href="index.html">Home</a>
+         <a href="About.html">About</a>
+         <a href="services.html">Services</a>
+         <a href="contacts.html">Contacts</a>
+         <p>Ildingo <span>Leads</span>&COPY;2017</p>
+     </div>
+     <script> 
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width ='180px';
+               // document.getElementById('main').style.marginLeft ='250px';        
+            }
+            function closeSlideMenu(){
+                document.getElementById('side-menu').style.width ='0px';
+                document.getElementById('main').style.marginLeft ='0px';        
+            }
+    </script> 
+
+     <!--MAIN SECTION-->
+     <section id="showcase">
+      <div class="container">
+         <p class="burner">Geospatial analysis for business intelligence</p>
+
+         <p class="scenery">With the invent of Geospatial analysis and spatial econometrics,
+            partner with us to make sure you soar high in the market.
+            Our aim is to create a mutual interaction between you ,your 
+            customers and related affiliates by creating a stunning
+                scenery of business with a lasting recollection.
+         </p>
+      </div>
+     </section>
+
+     <!--NEWSLETTER SUBSCRIPTION-->
+     <section id="newsletter">
+        <div class="container">
+            <h3>Subscribe to our newsletter</h3>
+            <form action="post">
+                <input type="email"  placeholder="Your email address" required="required">
+                <button type="submit" class="button1">Subscribe</button>
+            </form>
+        </div>
+     </section>
+     
+     <!--PREFACE OF WHAT WE DO-->
+     <section id="preface">
+        <div class="container">
+                <div class="stats">
+                    <h3>Web Mapping</h3>
+                    <img src="IMAGES/mapping.png" alt="webmaps" id="webmap">
+                    <p>With the new catch on web development advances within  this age and time,
+                            we take advantage of the tools for web development and integrate it with mapping .
+                            Depending on your needs the system can be developed in order to meet your issues 
+                            with ease and efficiency.</p>
+                </div>
+                <div class="stats">
+                     <h3>Spatial Statistics and analysis</h3>
+                     <img src="IMAGES/Pysal.png" alt="stats">
+                     <p>Understanding your environment is an important issue especially when the objects within your 
+                            environment can be classified as points within space.Your customers for example ,whose behavior
+                            can be investigated with respect to the seasons, your products and your competitor's tactics.
+                            With spatial statistics your are able to predict their behavior, spending patterns and attitude
+                            towards your products or services</p>
+                </div>
+                <div class="stats">
+                    <h3>GIS Development</h3>
+                    <img src="IMAGES/PlaceMAp.jpeg" alt="places">
+                    <p>For specialized geospatial analysis software and light-weight tools for 
+                      geospatial analysis and spatial statistics as per your specifications
+                       we are here to 
+                    make your dreams and goals real.</p>
+                </div>
+        </div>
+     </section>
+
+     <!--FOOTER SECTION-->
+     <footer id="bottom">
+         <div class="gridded">
+             <div class="box1">
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contacts.html">Contacts</a>
+             </div>
+         </div>
+         <p class="lgbotom">Ildingo<span>Leads</span>&COPY;2017</p>
+         <p class="moto">" With you till the end of the line.."</p>
+     </footer>
+</body>
+</html>

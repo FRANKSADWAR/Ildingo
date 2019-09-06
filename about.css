@@ -1,0 +1,360 @@
+@font-face{
+    font-family: 'Ubuntu-regular';
+    font-weight: normal;
+    font-style: normal;
+    src:url('FONTS/ubuntu/Ubuntu-Regular.ttf');
+
+}
+@font-face{
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-style: normal;
+    src:url('FONTS/roboto/Roboto-Regular.ttf')
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url('FONTS/open-sans/OpenSans-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    font-family: 'Ubuntu-regular';
+    background-color: #ffffff;
+    overflow-x: hidden;
+    width: 100%;
+    
+}
+
+
+/*Header */
+.congruent{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+#current{
+    color: #ffcc00;
+}
+.navbar{
+    background-color: #0d1014;
+    overflow: hidden;
+    height: 48px;
+    width: 100%;
+
+}
+.navbar a {
+    float: left;
+    display: block; 
+    color: #f2f2f2; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.brand {
+    
+    margin-left: 45px;
+   color: #ffffff;
+   font-family: 'Roboto';
+   font-weight: normal;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+.brand i{
+    padding-right: 12px;
+    border-right: 1px solid #ffcc00;
+    font-style: normal;
+    color: #ffcc00;
+}
+.navbar ul{
+    margin: 8px 0 0 0 ;
+    list-style-type: none;
+
+}
+.navbar a:hover{
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.side-nav{
+    
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #111111;
+   opacity: 0.9;
+   overflow-x: hidden;
+   padding-top: 60px;
+   transition: 0.4s;
+   
+}
+.side-nav  p{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #ffffff;
+    padding-top: 250px;
+    padding-left: 12px;
+    font-style: italic;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+} 
+.side-nav  p  span{
+    color: #ffcc00;
+}
+.side-nav a {
+    font-size: 14px;
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #cccccc;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav a:hover{
+    color: #ffffff;
+}
+
+.side-nav .btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size:36px;
+    margin-left: 50px;
+}
+
+
+/*Container styling*/
+.container{
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+/*  .........THE SECTION AREA........*/
+#main{
+    font-style: normal;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+article#maincol{
+  float: left;
+  width: 65%;
+}
+#sidebar{
+    float: right;
+    width: 30%;
+}
+#sidebar h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+article h1.Blue{
+    text-transform:  capitalize;
+    font-weight: normal;
+}
+article h1.page-title{
+    font-weight:normal;
+}
+.dark{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-right: 20px;
+    background-color: #0d1014;
+    color:#ffffff;
+}
+
+
+/*......FOOTER SECTION....*/
+#bottom{
+    margin-top: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background-color:  #0d1014;
+    color: #ffffff;
+    font-family: 'Roboto';
+   max-height: 170px;
+}
+#bottom .find{
+    font-size: 13px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#bottom p.lgbotom{
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+#bottom p.moto{
+     text-align: center;
+     padding-top: 18px;
+     padding-bottom: 12px;
+     font-style: italic;
+     font-size: 15px;
+     padding-top: 0px;
+}
+#bottom p span{
+    color: #ffcc00;
+}
+.gridded{
+    padding: 15px;
+    display: grid;
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Roboto';
+    background-color:  #0d1014;
+}
+#bottom a {
+    font-size: 16px;
+    display: inline;
+    padding: 30px;
+    text-decoration: none;
+    color: #ffffffde;
+}
+#bottom a:hover{
+    color: #ffffff;
+}
+#bottom  img{
+    position: relative;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+
+    /*...The media queries for responsive design....*/
+@media(max-width:768px){
+    #branding,article#maincol,
+     aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%; 
+    }
+@media(max-width:300px){
+    body{
+        overflow-x:hidden;
+    }
+    #main{
+        overflow: hidden;
+    }
+    /*#preface img{*/
+       /* width: 200px;*/
+        /*height: 160px;}*/
+    #preface  #webmap{
+        width: 250px;
+        height: 120px;
+    }
+    .stats{
+        display: block;
+        width:100%;
+       /*float: left;*/
+      /* padding: 15px;*/
+    }
+    .stats p{
+        font-size: 13px;
+        font-family: 'Roboto';
+    }
+    .stats  h3{
+        font-style: 'Roboto';
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+}
+@media(max-width:430px){
+    #bottom a{
+        display: inline;
+        font-size: 12px;
+        padding: 5px;
+    }
+    /*#preface img{*/
+        /* width: 200px;*/
+         /*height: 160px;*/
+     
+     #preface  #webmap{
+         width: 250px;
+         height: 120px;
+     }
+     .stats{
+         display: block;
+        width:100%;
+        /*float: left;*/
+       /* padding: 15px;*/
+     }
+     .stats p{
+         font-size: 13px;
+         font-family: 'Roboto';
+     }
+     .stats  h3{
+         font-style: 'Roboto';
+         font-size: 16px;
+         font-weight: normal;
+        }
+     
+}
+@media(max-width: 320px){
+    #bottom a{
+        display: inline;
+        font-size: 10px;
+        padding: 3px;
+    }
+    /*#preface img{*/
+        /* width: 200px;*/
+         /*height: 160px;}*/
+     #preface  #webmap{
+         width: 250px;
+         height: 120px;
+     }
+     .stats{
+         display: block;
+        width:100%;
+        /*float: left;*/
+       /* padding: 15px;*/
+     }
+     .stats p{
+         font-size: 13px;
+         font-family: 'Roboto';
+     }
+     .stats  h3{
+         font-style: 'Roboto';
+         font-size: 16px;
+         font-weight: normal;
+     }
+    }
+
+     @media(max-width:890px) {
+        /*#preface img{*/
+            /* width: 200px;*/
+             /*height: 160px;}*/
+         #preface  #webmap{
+             width: 250px;
+             height: 120px;
+         }
+         .stats{
+             display: block;
+            width:100%;
+            /*float: left;*/
+           /* padding: 15px;*/
+         }
+         .stats p{
+             font-size: 13px;
+             font-family: 'Roboto';
+         }
+         .stats  h3{
+             font-style: 'Roboto';
+             font-size: 16px;
+             font-weight: normal;
+         }     
+     }
+
+
+}
+
+

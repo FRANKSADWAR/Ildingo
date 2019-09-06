@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="contacts.css">
+    <title>Contacts</title>
+</head>
+<body>
+            <!--HEADER AND NAVIGATION BAR-->
+            <nav class="navbar">
+                    <span class="open-slide">
+                       <a class ="congruent" href="#" onclick="openSlideMenu()">&Congruent;</a>
+                    </span>
+                      <h1 class="brand">Ildingo<i>Leads&TRADE;</i></h1>
+                </nav>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a id="current" href="contacts.html">Contacts</a>
+                    <p>Ildingo <span>Leads</span>&COPY;2017</p>
+                </div>
+                <script> 
+                       function openSlideMenu(){
+                           document.getElementById('side-menu').style.width ='180px';
+                          // document.getElementById('main').style.marginLeft ='250px';        
+                       }
+                       function closeSlideMenu(){
+                           document.getElementById('side-menu').style.width ='0px';
+                           document.getElementById('main').style.marginLeft ='0px';        
+                       }
+               </script>
+               <section id="contactus">
+                <div class="wrapper">
+                   <div class="online">
+                       <h3>Online</h3>
+                       <p>Ask about our products, support or consulting and we will get 
+                           in touch within one working day.Make sure to email us at
+                           <a href="IldingoLeads@gmail.com">IldingoLeads@gmail.com</a>
+                       </p>
+                   </div>
+                   <div>
+                       <h3>Technical assistance</h3>
+                       <p>If you are looking for help in using our
+                           products or unsure of how they operate then head 
+                           straight to your phone at <span> +254702568824.</span><br>
+                           Incase you need any assistance that requires our presence, please
+                               notify us earlier so that we plan for that too.
+                       </p>
+                   </div>
+                </div>
+               </section>
+       
+            <!--FOOTER SECTION-->
+     <footer id="bottom">
+            <div class="gridded">
+                <div class="box1">
+                       <a href="index.html">Home</a>
+                       <a href="About.html">About</a>
+                       <a href="services.html">Services</a>
+                       <a href="contacts.html">Contacts</a>
+                </div>
+            </div>
+            <p class="lgbotom">Ildingo<span>Leads</span>&COPY;2017</p>
+            <p class="moto">" With you till the end of the line.."</p>
+        </footer>
+</body>
+</html>
